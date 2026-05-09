@@ -173,6 +173,25 @@ go mod verify
 └── LICENSE
 ```
 
+## Contributing
+
+Contributions are welcome. If ProjectScans helps you, or if you see a way to make it clearer, safer, faster, or easier to use, you are invited to contribute.
+
+The usual flow is:
+
+```text
+Fork the repo -> create a branch -> make your change -> open a pull request
+```
+
+Please keep pull requests focused and easy to review. A good contribution includes:
+
+- A short explanation of the problem or improvement.
+- Tests for behavior changes when possible.
+- Documentation updates when commands, config, reports, or user-facing behavior change.
+- A clean `go test ./...` result before opening the pull request.
+
+Direct changes to `main` are not used for this project. Please raise a pull request so changes can be reviewed before they are merged.
+
 ## License
 
 ProjectScans is released under the MIT License. See `LICENSE` for details.
