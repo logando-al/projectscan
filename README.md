@@ -1,4 +1,4 @@
-# PROJECT SCAN
+# projectscan
 
 ```
 ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗    ███████╗ ██████╗ █████╗ ███╗   ██╗
@@ -11,17 +11,17 @@
 
 CLI and TUI project scanner for auditing Git hygiene, open-source readiness, dependencies, and exportable portfolio reports.
 
-ProjectScans scans one project or a folder of projects and summarizes the signals that matter before sharing, maintaining, or publishing code: language mix, README quality, license presence, tests, CI, dependency manifests, Git metadata, and safety findings.
+projectscan scans one project or a folder of projects and summarizes the signals that matter before sharing, maintaining, or publishing code: language mix, README quality, license presence, tests, CI, dependency manifests, Git metadata, and safety findings.
 
 ## What It Does
 
-ProjectScans helps developers review local codebases before they become portfolio entries, internal deliverables, or public open-source repositories.
+projectscan helps developers review local codebases before they become portfolio entries, internal deliverables, or public open-source repositories.
 
 It can run as a terminal command for quick reports, or as an interactive TUI for browsing audit views and exporting reports.
 
 ```text
 ┌───────────────┐     ┌─────────────────┐     ┌────────────────────┐
-│ Local folder  │────→│ ProjectScans     │────→│ Terminal/TUI report │
+│ Local folder  │────→│ projectscan      │────→│ Terminal/TUI report │
 └───────────────┘     └─────────────────┘     └────────────────────┘
                              │
                              └────→ HTML / JSON / Markdown / CSV
@@ -48,8 +48,8 @@ It can run as a terminal command for quick reports, or as an interactive TUI for
 Clone the repository and build the binary:
 
 ```bash
-git clone https://github.com/logando-al/projectscans.git
-cd projectscans
+git clone https://github.com/logando-al/projectscan.git
+cd projectscan
 go build -o projectscan .
 ```
 
@@ -129,7 +129,7 @@ Exports are written to `projectscan-exports/`.
 
 ## Configuration
 
-ProjectScans looks for `.projectscan.toml` in the scanned root unless a config path is passed with `--config`.
+projectscan looks for `.projectscan.toml` in the scanned root unless a config path is passed with `--config`.
 
 Example:
 
@@ -175,7 +175,7 @@ go mod verify
 
 ## Contributing
 
-Contributions are welcome. If ProjectScans helps you, or if you see a way to make it clearer, safer, faster, or easier to use, you are invited to contribute.
+Contributions are welcome. If projectscan helps you, or if you see a way to make it clearer, safer, faster, or easier to use, you are invited to contribute.
 
 The usual flow is:
 
@@ -194,4 +194,4 @@ Direct changes to `main` are not used for this project. Please raise a pull requ
 
 ## License
 
-ProjectScans is released under the MIT License. See `LICENSE` for details.
+projectscan is released under the MIT License. See `LICENSE` for details.
